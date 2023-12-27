@@ -1,0 +1,75 @@
+.hero-container {
+    overflow: hidden;
+}
+  
+.nav{
+    background-color: black;
+    padding: 20px;
+    top: 20xp;
+}
+
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none; /* Disable user interaction with the video */
+}
+  
+.content{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Set text color to match your design */
+    
+  }
+
+  .content img{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  .content h1{
+    font-size: 60px;
+  }
+
+  .content p{
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Add any additional styling as needed */
+  .typewriter {
+    overflow: hidden;
+    border-right: 0.15em solid white; /* Adjust the border style as needed */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em; /* Adjust the letter spacing as needed */
+    animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('../assets/FontsFree-Net-ethnocentric-rg.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Neoterique';
+    src: url('../assets/Neoterique.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
