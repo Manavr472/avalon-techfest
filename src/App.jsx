@@ -19,8 +19,10 @@ const App = () => {
 
   return (
    <>
+    {/* <Hero/> */}
    <div className='bg-black absolute top-0 h-screen'></div>
    <Timeline />
+   {/* <Footer/> */}
    </>
   );
 };
