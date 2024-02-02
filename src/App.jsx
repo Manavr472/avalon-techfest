@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Hero from './components/Hero';
 import Register from './components/Register';
-
-import Footer from './components/Footer'
-import Timeline from './components/Timeline'
+import Sponsor from './components/Sponsor';
+import Footer from './components/Footer';
+import Timeline from './components/Timeline';
+import MarqueeComponent from './components/Carousel2';
+import About from './components/About';
 import './App.css';
 
 
@@ -19,10 +21,12 @@ const App = () => {
 
   return (
    <>
-    {/* <Hero/> */}
-   <div className='bg-black absolute top-0 h-screen'></div>
-   <Timeline />
-   {/* <Footer/> */}
+    <Hero/> 
+   <About/>
+   <Sponsor/>
+   {/* <Timeline /> */}
+    <MarqueeComponent></MarqueeComponent>
+    <Footer/>
    </>
   );
 };

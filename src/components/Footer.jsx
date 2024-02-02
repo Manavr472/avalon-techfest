@@ -10,7 +10,8 @@ const FooterWrapper = styled.div`
   background-repeat: no-repeat;
   height: auto;
   text-align: center;
-  
+  display: flex;
+  flex-direction: column;
   padding: 30px 20px;
 
   @media (max-width: 768px) {
@@ -22,6 +23,7 @@ const FooterWrapper = styled.div`
 
 const Logo = styled.img`
   width: 200px; /* Set the width of your logo */
+  margin: 0 auto 20px; /* Center the logo */
 `;
 
 const SocialIcons = styled.div`

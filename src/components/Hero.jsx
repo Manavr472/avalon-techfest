@@ -6,7 +6,7 @@ import './fonts.css';
 const HeroContainer = styled.div`
   position: relative;
   width: 100%; /* Ensure full width across viewports */
-  height: 95vh;
+  height: 100vh;
   overflow: hidden;
 
   /* Responsive layout */
