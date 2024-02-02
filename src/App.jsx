@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import Hero from './components/Hero';
 import Register from './components/Register';
-import Carousel from './components/Carousel'
+
 import Footer from './components/Footer'
+import Timeline from './components/Timeline'
 import './App.css';
+
+
 
 const App = () => {
   // const [showLogoZoom, setShowLogoZoom] = useState(true);
@@ -15,12 +18,10 @@ const App = () => {
   // };
 
   return (
-    <div className="app">
-      <Hero />
-      <Register />
-      <Carousel />
-      <Footer /> 
-    </div>
+   <>
+   <div className='bg-black absolute top-0 h-screen'></div>
+   <Timeline />
+   </>
   );
 };
 

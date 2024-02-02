@@ -6,7 +6,7 @@ import './fonts.css';
 const HeroContainer = styled.div`
   position: relative;
   width: 100%; /* Ensure full width across viewports */
-  height: 100vh;
+  height: 95vh;
   overflow: hidden;
 
   /* Responsive layout */
@@ -101,8 +101,8 @@ const Hero = () => {
         loop={true}
         controls={false}
         muted={true}
-        width= "130rem"
-        height= "130rem"
+        width= "100rem"
+        height= "100rem"
       />
       <OverlayContent>
         <LogoImage src="https://i.ibb.co/W2pzPgy/avalon-logo.png" alt="avalon-logo" />
