@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Timeline from './components/Timeline';
 import MarqueeComponent from './components/Carousel2';
 import About from './components/About';
+import Events from './components/Events/Events';
 import './App.css';
 
 
@@ -23,6 +24,8 @@ const App = () => {
    <>
     <Hero/> 
    <About/>
+    <Events/>
+
    <Sponsor/>
    {/* <Timeline /> */}
     <MarqueeComponent></MarqueeComponent>
