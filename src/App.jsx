@@ -8,6 +8,7 @@ import MarqueeComponent from './components/Carousel2';
 import About from './components/About';
 import Events from './components/Events/Events';
 import './App.css';
+import Navbar from './components/Navbar';
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
 
   return (
    <>
+   <Navbar/>
     <Hero/> 
    <About/>
     <Events/>

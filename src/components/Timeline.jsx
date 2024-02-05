@@ -1,7 +1,10 @@
-import React from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useAnimation, useInView } from 'framer-motion';
 
 const EventTab = ({ direction, title, description }) => {
+   const ref  = useRef();
+  const inView = useInView(ref);
+
   const controls = useAnimation();
 
   const handleInView = (inView) => {

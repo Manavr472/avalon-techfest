@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Timeline from "../Timeline";
+import VerticalTimeline from "../Events/Timeline";
+import DomainH from "./DomainH";
+import ShiftingCountdown from "./CountDown";
 
 const Events = () => {
-  const [activeTab, setActiveTab] = useState("profile");
+  const [activeTab, setActiveTab] = useState("Hackathon");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -12,46 +14,67 @@ const Events = () => {
   
 
   return (
-    <div className="bg-white flex flex-col justify-center items-center min-h-screen">
-      <div className="mb-32 overflow-hidden h-full bg-cyan-500">
+    <div className="flex min-h-screen bg-black flex-col">
+      
+      <div className="overflow-hidden justify-center gap-10 md:gap-32 items-center flex flex-col min-h-screen ">
+        <p className="text-8xl text-center p-10 ">Techfest Events</p>
+        <div className="w-[70%]"><ShiftingCountdown/></div>
+        <div className=" md:flex-row flex-col w-full flex justify-center items-center gap-20">
         <button
-          className={`inline-block absolute left-20 p-4 rounded-full mx-4 ${
-            activeTab === "profile"
-              ? "bg-blue-500 text-white"
-              : "bg-cyan text-gray-800"
+          className={`inline-block p-4  mx-4 ${
+            activeTab === "Hackathon"
+              ? "bg-blue-500 underline text-white"
+              : "bg-cyan text-yellow-500"
           }`}
-          onClick={() => handleTabClick("profile")}
+          onClick={() => handleTabClick("Hackathon")}
         >
-          Profile
+          Innova 2.0
         </button>
         <button
-          className={`inline-block absolute right-20 p-4 rounded-full mx-4 ${
-            activeTab === "dashboard"
-              ? "bg-blue-500 text-white"
-              : "bg-cyan text-gray-800"
+          className={`inline-block p-4  mx-4 ${
+            activeTab === "Project"
+              ? "bg-blue-500 underline text-white"
+              : "text-yellow-500"
           }`}
-          onClick={() => handleTabClick("dashboard")}
+          onClick={() => handleTabClick("Project")}
         >
-          Dashboard
+          Project
         </button>
+        <button
+          className={`inline-block p-4 mx-4 ${
+            activeTab === "Design"
+              ? "bg-blue-500 underline text-white"
+              : "bg-cyan text-yellow-500"
+          }`}
+          onClick={() => handleTabClick("Design")}
+        >
+          Design
+        </button>
+      </div>
       </div>
       <AnimatePresence >
         <div
-          className="p-8 rounded-lg bg-gray-50 dark:bg-gray-800 w-full mt-4"
-        >
-          {activeTab === "profile" && (
+          className="" >
+          {activeTab === "Hackathon" && (
             <div className="flex flex-col">
-                <Timeline/>
+                <DomainH/>
+                <VerticalTimeline/>
+
             </div>
           )}
-          {activeTab === "dashboard" && (
+          {activeTab === "Project" && (
             <div className="flex flex-col">
-                <Timeline/>
+                <VerticalTimeline/>
+            </div>
+          )}
+          {activeTab === "Design" && (
+            <div className="flex flex-col">
             </div>
           )}
         </div>
       </AnimatePresence>
     </div>
+    
   );
 };
 

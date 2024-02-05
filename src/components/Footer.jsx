@@ -43,8 +43,10 @@ const SocialIconLink = styled.a`
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper className='relative'>
       <Logo src="https://i.ibb.co/W2pzPgy/avalon-logo.png" alt="Avalon Logo" />
+      <div className='flex gap-5 justify-center items-center' >
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52017.44601061713!2d72.97512375718512!3d19.047247545815857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3eaaa53c4e3%3A0x9459161291e7ded5!2sTerna%20Engineering%20College!5e0!3m2!1sen!2sin!4v1707135874941!5m2!1sen!2sin" width="300" height="260" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <SocialIcons>
         <SocialIconLink href="https://chat.whatsapp.com/CFI63lUUezf14IBMYrW2El" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faWhatsapp} />
@@ -56,6 +58,7 @@ const Footer = () => {
           <FontAwesomeIcon icon={faYoutube} />
         </SocialIconLink>
       </SocialIcons>
+      </div>
       <h5>© 2010-2023 Avalon Techfest. All Rights Reserved.</h5>
     </FooterWrapper>
   );

@@ -39,6 +39,8 @@ const OverlayContent = styled.div`
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+  justify-content:center;
+  align-items:center ; 
 `;
 
 const Video = styled(ReactPlayer)`
@@ -104,12 +106,15 @@ const Hero = () => {
         width= "100rem"
         height= "100rem"
       />
+      
       <OverlayContent>
+      <div className='flex flex-col justify-center items-center'>
         <LogoImage src="https://i.ibb.co/W2pzPgy/avalon-logo.png" alt="avalon-logo" />
         <CustomFont>TechFest</CustomFont>
         <CustomFont2>Where talent meets opportunity in the realm of technology.</CustomFont2>
         <p></p>
         <SciFiButton type="button" onClick={handleButtonClick}>Join Avalon</SciFiButton>
+      </div>
       </OverlayContent>
     </HeroContainer>
   );

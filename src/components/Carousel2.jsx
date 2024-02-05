@@ -2,12 +2,19 @@ import Marquee from "react-fast-marquee";
 
 export default function MarqueeComponent() {
     const containerStyle = 'p-5 bg-gradient-r from-black via-orange-950 to-black flex justify-center items-center m-2 h-[700px]'; // Tailwind CSS classes for the container
-    const imgStyle = ' h-[550px] hover:scale-95 w-fit'; // Tailwind CSS classes for the image
+    const imgStyle = ' h-[550px] p-1 rounded-xl transition-all duration-75 hover:scale-[1.03] w-fit'; // Tailwind CSS classes for the image
     return (
-        <>
+        <div className="flex flex-col"
+        style={{
+            backgroundImage: `url("../src/assets/glow-lines.webp")`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            
+        }}
+        >
         <div className="flex text-center justify-center items-center p-1 text-2xl md:text-7xl text-white">Glimpse at Avalon 2023</div>
-        <Marquee className=" overflow-hidden" style={{ height: '600px',
-    backgroundColor: 'black',}} pauseOnHover="True" speed="400" delay="0.1" >
+        <Marquee  className=" overflow-hidden" style={{ height: '600px',
+    }} pauseOnHover="True" speed="250" delay="0.1" >
 
     <div className={containerStyle}>
       <img className={imgStyle} src="https://i.ibb.co/Xj29dhx/image-6.jpg" alt="image-6" border="0"/>
@@ -105,7 +112,7 @@ export default function MarqueeComponent() {
       <img className={imgStyle} src="https://i.ibb.co/HThn5zT/image-5.jpg" alt="image-5" border="0"/>
     </div>
    </Marquee>
-        </>
+        </div>
     )
 
 }
