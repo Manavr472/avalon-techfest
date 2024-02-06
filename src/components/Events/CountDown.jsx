@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 // NOTE: Change this date to whatever date you want to countdown to :)
-const COUNTDOWN_FROM = "2/25/2024";
+const COUNTDOWN_FROM = "2/27/2024";
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
@@ -46,7 +46,7 @@ const ShiftingCountdown = () => {
   };
 
   return (
-    <div className="p-4 bg-gradient-to-br from-violet-600 to-indigo-600">
+    <div className="p-2 bg-gradient-to-br from-violet-600 to-indigo-600">
       <div className="w-full max-w-5xl mx-auto flex items-center text-white bg-black">
         <CountdownItem num={remaining.days} text="days" />
         <CountdownItem num={remaining.hours} text="hours" />

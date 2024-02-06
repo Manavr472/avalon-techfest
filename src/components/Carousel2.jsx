@@ -4,7 +4,8 @@ export default function MarqueeComponent() {
     const containerStyle = 'p-5 bg-gradient-r from-black via-orange-950 to-black flex justify-center items-center m-2 h-[700px]'; // Tailwind CSS classes for the container
     const imgStyle = ' h-[550px] p-1 rounded-xl transition-all duration-75 hover:scale-[1.03] w-fit'; // Tailwind CSS classes for the image
     return (
-        <div className="flex flex-col"
+        <div id="glimpse-section"
+        className="flex flex-col"
         style={{
             backgroundImage: `url("../src/assets/glow-lines.webp")`,
             backgroundSize: "cover",

@@ -8,6 +8,7 @@ export default function Navbar() {
   const handleClickScroll = (idName) => {
     console.log(idName);
     const element = document.getElementById(idName);
+    setNavbarOpen(!navbarOpen);
     if (element) {
       // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: "smooth" });
@@ -50,9 +51,9 @@ return (
         <div className="container max-w-[97vw] transition-all delay-75 duration-75 px-4 mx-auto flex md:flex-row flex-col items-center md:justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              className="font-bold  inline-block mr-4 py-2"
               href=""
-            >Syntax Erruer
+            ><img src="" alt="Avalon" />
             </a>
             <motion.button
              whileHover={{ scale: 1.1 }}
@@ -99,46 +100,38 @@ return (
           </div>
           <div
             className={
-              "lg:flex flex-grow w-full transition-all delay-75 duration-150 items-center" +
+              "lg:flex flex-grow w-full justify-evenly gap-20 transition-all delay-75 duration-150 items-center" +
               (navbarOpen ? "flex flex-col" : " hidden")
             }
             id="example-navbar-danger"
           >
-            <ul className="flex md:justify-end items-center md:items-end md:mr-20 flex-col w-full md:flex-row transition-all delay-75 duration-150 list-none ">
+            <ul className="flex md:justify-center items-center md:items-end md:mr-20 flex-col w-full md:flex-row transition-all delay-75 duration-150 list-none ">
               <li className="nav-item">
                 <button
                 onClick={() => handleClickScroll('hero-section')}
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white transition-all duration-150 hover:text-cyan-300 "
+                  className="px-3 py-2 flex items-center text-base uppercase font-bold leading-snug text-white transition-all duration-150 hover:text-cyan-300 "
                 
                 >
                  <span className="ml-2">Home</span>
                 </button>
               </li>
+              
               <li className="nav-item">
                 <button
-                onClick={() => handleClickScroll('project-section')}
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white transition-all duration-150 hover:text-cyan-300"
-                 
-                >
-                  <span className="ml-2">Projects</span>
-                </button>
-              </li>
-              <li className="nav-item">
-                <button
-                onClick={() => handleClickScroll('team-section')}
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white transition-all duration-150 hover:text-cyan-300"
+                onClick={() => handleClickScroll('events-section')}
+                  className="px-3 py-2 flex items-center text-base uppercase font-bold leading-snug text-white transition-all duration-150 hover:text-cyan-300"
                 
                 >
-                  <span className="ml-2">Team</span>
+                  <span className="ml-2">Events</span>
                 </button>
               </li>
               <li className="nav-item">
                 <button
-                onClick={() => handleClickScroll('contact-section')}
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white transition-all duration-150 hover:text-cyan-300"
+                onClick={() => handleClickScroll('glimpse-section')}
+                  className="px-3 py-2 flex items-center text-base uppercase font-bold leading-snug text-white transition-all duration-150 hover:text-cyan-300"
                   
                 >
-                  <span className="ml-2">Contact</span>
+                  <span className="ml-2">Glimpse!</span>
                 </button>
               </li>
             </ul>
