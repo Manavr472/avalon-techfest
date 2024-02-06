@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const DomainCard = () => {
   return (
-    <div className="grid grid-cols-1 place-items-center md:grid-cols-4 w-full px-4 py-12 text-slate-900">
+    <div className="grid grid-cols-1 gap-y-10 place-items-center md:grid-cols-4 w-full px-4 py-12 text-slate-900">
       <TiltCard bgColor="#67f9fa" title="WEB OR APP DEVELOPMENT" content="Craft mobile/web apps delving into the Quantum Realm, offering immersive experiences." />
       <TiltCard bgColor="#fce670" title="AI & ML" content="Employ cutting-edge AI and ML technologies to pioneer a new era of exploration and understanding within the Quantum Realm." />
       <TiltCard bgColor="#f76969" title="WEB 3.0" content="Explore the potential of Blockchain technology to propel the Quantum Realm into its next frontier of innovation and understanding." />
@@ -11,6 +11,8 @@ const DomainCard = () => {
     </div>
   );
 };
+
+
 
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;

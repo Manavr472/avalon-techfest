@@ -28,12 +28,13 @@ const TimelineEvent = ({ side, title, description }) => {
   );
 };
 
-const VerticalTimeline = () => {
+const VerticalTimelineH = () => {
 
 
   return (
-    <div className="w-[98vw] relative min-h-screen">
-      <div className="h-1/4">
+    <div className="w-full bg-gradient-to-bl from-violet-950 via-black to-blue-900 relative min-h-screen">
+      <div className=""></div>
+      <div className=" text-center text-6xl h-1/4">
         Timeline
       </div>
       <div className="flex flex-col overflow-hidden h-full w-full md:w-[95%] md:grid grid-cols-1 mx-auto p-2 text-blue-50">
@@ -94,4 +95,4 @@ const VerticalTimeline = () => {
   );
 };
 
-export default VerticalTimeline;
+export default VerticalTimelineH;

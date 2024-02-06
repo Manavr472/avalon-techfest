@@ -53,7 +53,7 @@ return (
             <a
               className="font-bold  inline-block mr-4 py-2"
               href=""
-            ><img src="" alt="Avalon" />
+            ><img src="../src/assets/avalon_logo.png" className="w-20" alt="Avalon" />
             </a>
             <motion.button
              whileHover={{ scale: 1.1 }}

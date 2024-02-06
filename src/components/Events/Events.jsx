@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import VerticalTimeline from "../Events/Timeline";
+import Prizes from "./Prizes";
 import DomainH from "./DomainH";
 import ShiftingCountdown from "./CountDown";
 
@@ -102,16 +103,19 @@ const Events = () => {
             <div className="flex flex-col">
                 <DomainH/>
                 <VerticalTimeline/>
+                <Prizes/>
 
             </div>
           )}
           {activeTab === "Project" && (
             <div className="flex flex-col">
                 <VerticalTimeline/>
+
             </div>
           )}
           {activeTab === "Design" && (
-            <div className="flex flex-col">
+            <div className="flex flex-col"> 
+                
             </div>
           )}
         </div>
