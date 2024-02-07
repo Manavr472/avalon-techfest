@@ -1,5 +1,5 @@
-import React, { useRef, useEffect, useState } from "react";
-import { motion, useInView,  useAnimation } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const TimelineEvent = ({ side, title, description }) => {
   const ref = useRef(null);
@@ -17,12 +17,12 @@ const TimelineEvent = ({ side, title, description }) => {
         transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
       }}
 
-      className={` p-4 rounded-xl text-center  md:w-[43%] xl:w-[44%] 2xl:w-[45%] shadow-md ${
-          side === "right" ? "ml-auto text-yellow-300 bg-gradient-to-bl from-cyan-400 to-black" : " text-yellow-300 bg-gradient-to-tl from-black to-cyan-400"
+      className={` p-4 rounded-xl text-center py-10 mx-2 md:w-[43%] xl:w-[44%] 2xl:w-[45%] shadow-md ${
+          side === "right" ? "ml-auto text-white bg-gradient-to-bl from-cyan-400  to-black" : " text-white bg-gradient-to-tl from-black to-cyan-400"
       }`}
       >
-      <h3 className="font-bold font-Anton text-lg mb-1">{title}</h3>
-      <p className="font-serif">{description}</p>
+      <h3 className="font-semibold font-SquadaOne text-xl md:text-3xl mb-1">{title}</h3>
+      <p className="font-Comfortaa">{description}</p>
     </motion.div>
     </div>
   );
@@ -32,12 +32,12 @@ const VerticalTimelineH = () => {
 
 
   return (
-    <div className="w-full  bg-gradient-to-bl from-violet-950 via-black to-blue-900 relative min-h-screen">
+    <div className="w-full bg-gradient-to-bl from-blue-950 via-black to-purple-950 relative min-h-screen">
       
-      <div className=" text-center text-6xl h-1/4">
+      <div className=" text-center font-Impact my-10 text-5xl md:text-7xl h-1/4">
         Timeline
       </div>
-      <div className="flex flex-col gap-3 md:gap-5 xl:gap-10 2xl:gap-9 my-10 overflow-hidden h-full w-full md:w-[90%] md:grid grid-cols-1 mx-auto ">
+      <div className="flex flex-col gap-4 my-10 overflow-hidden h-full w-full md:w-[90%] md:grid grid-cols-1 mx-auto ">
         {/* Add Timeline Events */}
         
         <TimelineEvent

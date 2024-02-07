@@ -14,10 +14,11 @@ export default function PrizesP() {
         >
           <div className=" h-screen flex flex-col justify-center items-center bg-opacity-20 bg-black ">
             <img
-              src="prize-pool-image.jpg"
+              src="../icons/Prizes1.png"
               alt="Prize Pool"
+              className='w-80'
             />
-            <h2 className="text-center text-5xl">30K+!!</h2>
+           
             <p>All participants get swags, Certificates and more!</p>
           </div>
         </div>

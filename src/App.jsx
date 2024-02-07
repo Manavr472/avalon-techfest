@@ -7,6 +7,7 @@ import About from './components/About';
 import Events from './components/Events/Events';
 import './App.css';
 import Navbar from './components/Navbar';
+import FaqSection from './components/Faqs';
 
 
 
@@ -29,6 +30,8 @@ const App = () => {
    <Sponsor/>
    {/* <Timeline /> */}
     <MarqueeComponent></MarqueeComponent>
+
+    {/* <FaqSection/> */}
     <Footer/>
    </>
   );

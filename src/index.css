@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Squada+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Prompt:wght@300;400;600&family=Squada+One&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&family=Lato:ital,wght@0,300;0,400;1,100;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -20,6 +21,34 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+
+::-webkit-scrollbar-thumb {
+
+  background:linear-gradient( #218aec, #1b48d2); /* Light blue color for the thumb */
+  border-radius: 10px; /* Set the border-radius for rounded corsaners */
+  border: 1px solid #00003c; /* Gray border for the thumb */
+  padding: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6b4bec; /* Light blue color for the thumb on hover */
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent; /* Set the background color for the scrollbar corner */
+}
+
+
 
 /* @font-face {
   font-family: 'Ethnocentric';

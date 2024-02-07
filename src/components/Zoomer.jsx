@@ -10,7 +10,7 @@ export default function WordZoomer({ text }) {
         <div ref={ref}>
             {isInView && (
                 <motion.div
-                    className=" text-3xl md:text-7xl text-blue-300 "
+                    className=" text-4xl md:text-7xl shadow text-[#ff5400] "
                     animate={{ scale: [1, 1.3] }}
                     transition={{ duration: 3 }}
                 >

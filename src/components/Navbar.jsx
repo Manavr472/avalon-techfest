@@ -53,7 +53,7 @@ return (
             <a
               className="font-bold  inline-block mr-4 py-2"
               href=""
-            ><img src="../src/assets/avalon_logo.png" className="w-20" alt="Avalon" />
+            ><img src="../src/assets/avalon_logo.png" className="w-28" alt="Avalon" />
             </a>
             <motion.button
              whileHover={{ scale: 1.1 }}
@@ -105,11 +105,11 @@ return (
             }
             id="example-navbar-danger"
           >
-            <ul className="flex md:justify-center items-center md:items-end md:mr-20 flex-col w-full md:flex-row transition-all delay-75 duration-150 list-none ">
+            <ul className="flex md:justify-center font-Comfortaa items-center md:items-end md:mr-20 flex-col w-full md:flex-row transition-all delay-75 duration-150 list-none ">
               <li className="nav-item">
                 <button
                 onClick={() => handleClickScroll('hero-section')}
-                  className="px-3 py-2 flex items-center text-base uppercase font-bold leading-snug text-white transition-all duration-150 hover:text-cyan-300 "
+                  className="px-3 py-2 flex items-center leading-snug text-white transition-all duration-150 hover:text-cyan-300 "
                 
                 >
                  <span className="ml-2">Home</span>
@@ -119,7 +119,7 @@ return (
               <li className="nav-item">
                 <button
                 onClick={() => handleClickScroll('events-section')}
-                  className="px-3 py-2 flex items-center text-base uppercase font-bold leading-snug text-white transition-all duration-150 hover:text-cyan-300"
+                  className="px-3 py-2 flex items-center leading-snug text-white transition-all duration-150 hover:text-cyan-300"
                 
                 >
                   <span className="ml-2">Events</span>
@@ -128,7 +128,7 @@ return (
               <li className="nav-item">
                 <button
                 onClick={() => handleClickScroll('glimpse-section')}
-                  className="px-3 py-2 flex items-center text-base uppercase font-bold leading-snug text-white transition-all duration-150 hover:text-cyan-300"
+                  className="px-3 py-2 flex items-center  leading-snug text-white transition-all duration-150 hover:text-cyan-300"
                   
                 >
                   <span className="ml-2">Glimpse!</span>

@@ -13,7 +13,7 @@ function DomainP() {
             <p className="text-4xl">Quantum Leaps to Infinite Possiblities</p>
           </div>
           <div className="text-5xl font-sans text-center ">Project Domains</div>
-          <div className="">
+          <div className="flex h-full items-end">
             <DomainCardP />
           </div>
         </div>

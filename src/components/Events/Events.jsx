@@ -35,7 +35,7 @@ const Events = () => {
       className={`group relative border border-indigo-900 rounded-sm text-xl px-5 py-3 font-medium  transition-colors duration-[400ms] 
       ${
         activeTab === "Hackathon"
-          ? " bg-[#92E5EA] text-black"
+          ? " bg-blue-500 text-white"
           : " text-blue-200"
       }`}
       onClick={() => handleTabClick("Hackathon")}

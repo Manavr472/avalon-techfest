@@ -98,11 +98,11 @@ const Hero = () => {
   return (
     <HeroContainer id='hero-section' >
       <Video
-        url="https://jumpshare.com/embed/JY9bcL9Su3TIoc01LKRU"
+        url="https://pouch.jumpshare.com/preview/iO1lfuF4Q4KEal8EFUdOT85gX9znY3_dNNjIwvgO_B90l6qmxlmGYBkulsnAJSesmvMjN9YeMLCw-qaWvh4EVGvPjJMVhPZGddtemj7mDpKPO60sV0gAnb6Q-F_z3xZ-q5-03AlkhDZeeI0lMWhWOaN_fIMI2zJarj0avEcXWfs.mp4"
         playing={true}
         loop={true}
         controls={false}
-        muted={true}
+        // muted={true} kya hua bhai???
         width="100rem"
         height="100rem"
       />
@@ -114,7 +114,7 @@ const Hero = () => {
         <CustomFont>TechFest</CustomFont>
         <CustomFont2>Where talent meets opportunity in the realm of technology.</CustomFont2>
         
-        <button onClick={()=>{handleButtonClick()}} className=' bg-blue-600 text-lg py-2 font-mono justify-center flex border border-white px-16 m-2  '><img src="../Logo/DevFolio B.png" className='w-8 mr-10 ' alt="DEVFOLIO BUTTON" />Apply with Devfolio</button>
+        <button onClick={()=>{handleButtonClick()}} className=' bg-blue-600 text-base md:text-lg py-2 font-mono ite justify-center flex border border-white px-10 m-2  '><img src="../Logo/DevFolio B.png" className='w-8 mr-5 ' alt="DEVFOLIO BUTTON" />Apply with Devfolio</button>
       </div>
       </OverlayContent>
     </HeroContainer>
