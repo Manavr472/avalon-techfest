@@ -1,6 +1,6 @@
 import React from "react";
 
-const Prizes = () => {
+const PrizesH = () => {
     return (
         <>
             <div className="h-screen "
@@ -9,11 +9,12 @@ const Prizes = () => {
                 <div className=" h-screen flex flex-col justify-center items-center bg-opacity-20 bg-black ">
                 <img src="prize-pool-image.jpg" alt="Prize Pool" />
                 <h2 className="text-center text-5xl">1 Lac+!!!</h2>
-                <p>All participants get swags and more!</p>
+                <p>All participants get Certifcates, swags and more!</p>
                 </div>
             </div>
         </>
     )
 }
+  
 
-export default Prizes;
+export default PrizesH;

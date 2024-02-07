@@ -17,12 +17,12 @@ const TimelineEvent = ({ side, title, description }) => {
         transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
       }}
 
-      className={`bg-blue-500 p-4 rounded-xl md:w-1/2 my-4 shadow-md ${
-          side === "right" ? "ml-auto" : ""
+      className={` p-4 rounded-xl text-center  md:w-[43%] xl:w-[44%] 2xl:w-[45%] shadow-md ${
+          side === "right" ? "ml-auto text-violet-950 bg-gradient-to-bl from-yellow-400 to-orange-500" : " text-yellow-300 bg-gradient-to-br from-indigo-400 to-violet-600"
       }`}
       >
-      <h3 className="font-semibold text-lg mb-1">{title}</h3>
-      <p className="leading-tight text-justify">{description}</p>
+      <h3 className="font-bold font-Anton text-lg mb-1">{title}</h3>
+      <p className="font-serif">{description}</p>
     </motion.div>
     </div>
   );
@@ -32,63 +32,96 @@ const VerticalTimelineH = () => {
 
 
   return (
-    <div className="w-full bg-gradient-to-bl from-violet-950 via-black to-blue-900 relative min-h-screen">
-      <div className=""></div>
+    <div className="w-full  bg-gradient-to-bl from-violet-950 via-black to-blue-900 relative min-h-screen">
+      <div className=" md:absolute hidden md:block left-1/2 top-20 border-y-2 border-white -translate-x-1/2 "><img class=" h-[1500px] md:h-[1600px] lg:h-[1750px] xl:h-[1850px] 2xl:h-[2000px] " src="../HackTime.png" alt="" /></div>
       <div className=" text-center text-6xl h-1/4">
         Timeline
       </div>
-      <div className="flex flex-col overflow-hidden h-full w-full md:w-[95%] md:grid grid-cols-1 mx-auto p-2 text-blue-50">
+      <div className="flex flex-col gap-3 md:gap-5 xl:gap-10 2xl:gap-9 my-10 overflow-hidden h-full w-full md:w-[90%] md:grid grid-cols-1 mx-auto ">
         {/* Add Timeline Events */}
-        <TimelineEvent  
-          side="left"
-          title="Event 1"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quaerat?"
-        />
+        
         <TimelineEvent
           side="right"
-          title="Event 2"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, facilis."
+          title="Event Start"
+          description="Check In by 8.30"
         />
         <TimelineEvent
           side="left"
-          title="Event 1"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quaerat?"
+          title="Inauguration"
+          description="Briefing for partcipants 10:00-11:00"
         />
         <TimelineEvent
           side="right"
-          title="Event 2"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, facilis."
+          title="Problem Statement"
+          description="Problem Statement discussion 11:30-12:00"
         />
         <TimelineEvent
           side="left"
-          title="Event 1"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quaerat?"
+          title="Hackathon start"
+          description="Let the Coding Begin! 12:00"
         />
         <TimelineEvent
           side="right"
-          title="Event 2"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, facilis."
+          title="Guidance"
+          description="13:00-13:30"
         />
         <TimelineEvent
           side="left"
-          title="Event 1"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quaerat?"
+          title="Lunch"
+          description="14:00-15:00"
         />
         <TimelineEvent
           side="right"
-          title="Event 2"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, facilis."
+          title="Panel Discussion"
+          description="16:00"
         />
         <TimelineEvent
           side="left"
-          title="Event 1"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quaerat?"
+          title="Keep on Working"
+          description="Relax and Code"
         />
         <TimelineEvent
           side="right"
-          title="Event 2"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, facilis."
+          title="Tea Time"
+          description="18:00"
         />
+        <TimelineEvent
+          side="left"
+          title="Dinner"
+          description="Take a break at 21:00"
+        />
+       <p className="text-center md:hidden text-xl md:text-5xl">Day-2 Starts!!</p>
+        <TimelineEvent
+          side="right"
+          title="Connect"
+          description=" 00:00 starts with Interaction Session"
+        />
+        <TimelineEvent
+          side="left"
+          title="All-Nighter"
+          description="Code all Night with occasional Breaks"
+        />
+        <TimelineEvent
+          side="right"
+          title="Breakfast"
+          description="Take a final break at 10:00"
+        />
+        <TimelineEvent
+          side="left"
+          title="Deadline"
+          description="Hackathon Ends at 12:00"
+        />
+        <TimelineEvent
+          side="right"
+          title="Judging and pitching"
+          description="12:30"
+        />
+        <TimelineEvent
+          side="left"
+          title="Closing Ceremony"
+          description="Prize Distribution and Felicitation 14:30"
+        />
+        
         {/* Add more events as needed */}
       </div>
     </div>

@@ -4,7 +4,14 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['Roboto', 'sans-serif'],
+        'SquadaOne': ['Squada One', 'cursive'],
+        'Anton': ['Anton', 'sans-serif'],
+      },
+
+    },
   },
   plugins: [],
 }

@@ -54,20 +54,20 @@ const Footer = () => {
             <div className='flex items-center gap-2'>
               <SocialIconLink href="https://chat.whatsapp.com/CFI63lUUezf14IBMYrW2El" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faWhatsapp} />
-                <span>Chat</span>
               </SocialIconLink>
+                <span>Chat With us</span>
             </div>
             <div className='flex items-center gap-2'>
               <SocialIconLink href="https://www.instagram.com/avalonterna2024/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} />
-                <span>Follow</span>
               </SocialIconLink>
+                <span>Follow us for updates</span>
             </div>
             <div className='flex items-center gap-2'>
               <SocialIconLink href="https://www.youtube.com/@avalontechfest8898" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faYoutube} />
-                <span>Subscribe</span>
               </SocialIconLink>
+                <span>Subscribe to the channel</span>
             </div>
           </SocialIcons>
         </div>

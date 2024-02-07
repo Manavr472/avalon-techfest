@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import VerticalTimeline from "../Events/Timeline";
-import Prizes from "./Prizes";
+import PrizesH from "./PrizesH";
+import PrizesD from "./PrizesD";   
+import PrizesP from "./PrizesP";
 import DomainH from "./DomainH";
+import DomainD from "./DomainD";
+import DomainP from "./DomainP";
+
 import ShiftingCountdown from "./CountDown";
+import VerticalTimelineP from "./ProjectTimeline";
 
 const Events = () => {
   const [activeTab, setActiveTab] = useState("Hackathon");
@@ -18,10 +24,12 @@ const Events = () => {
     <div className="flex min-h-screen bg-black flex-col">
       
       <div id="events-section"
-      className="overflow-hidden justify-center gap-10 md:gap-32 items-center flex flex-col min-h-screen ">
-        <p className="text-8xl text-center p-10 ">Techfest Events</p>
+      className="overflow-hidden justify-center gap-10 md:gap-32 items-center flex flex-col min-h-screen "
+      style={{backgroundImage: "url('../Events.png')", backgroundSize: "cover", backgroundPosition: "center", }}
+      >
+        <p className="text-8xl font-SquadaOne text-center p-10 ">Techfest Events</p>
         <div className="w-[70%]"><ShiftingCountdown/></div>
-        <div className=" md:flex-row flex-col w-full flex justify-center items-center gap-20">
+        <div className=" md:flex-row font-Anton flex-col w-full flex justify-center items-center gap-20">
         <button
       
       className={`group relative border border-indigo-900 rounded-sm text-xl px-5 py-3 font-medium  transition-colors duration-[400ms] 
@@ -103,19 +111,21 @@ const Events = () => {
             <div className="flex flex-col">
                 <DomainH/>
                 <VerticalTimeline/>
-                <Prizes/>
+                <PrizesH/>
 
             </div>
           )}
           {activeTab === "Project" && (
             <div className="flex flex-col">
-                <VerticalTimeline/>
-
+                <DomainP/>
+                <VerticalTimelineP/>
+                <PrizesP/>
             </div>
           )}
           {activeTab === "Design" && (
             <div className="flex flex-col"> 
-                
+                <DomainD/>
+                <PrizesD/>
             </div>
           )}
         </div>

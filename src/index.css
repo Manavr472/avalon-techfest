@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Prompt:wght@300;400;600&family=Squada+One&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

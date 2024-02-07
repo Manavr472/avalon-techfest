@@ -14,6 +14,7 @@ const DomainCard = () => {
 
 
 
+
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
@@ -70,12 +71,12 @@ const TiltCard = ({ bgColor, title, content }) => {
         className="absolute inset-4 rounded-xl bg-white bg-opacity-80 shadow-lg"
       >
         <div className="h-full w-full  flex flex-col">
-          <h2 className="text-lg text-center my-auto font-bold">{title}</h2>
-          <p className="text-base px-3 text-center py-5 h-[60%]">{content}</p>
+          <h2 className="text-lg text-center font-mono my-auto font-bold">{title}</h2>
+          <p className="text-base px-3 font-serif text-center py-5 h-[60%]">{content}</p>
         </div>
       </div>
     </motion.div>
   );
 };
 
-export default DomainCard;
+export default DomainCard ;
