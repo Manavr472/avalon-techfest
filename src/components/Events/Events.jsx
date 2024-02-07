@@ -25,7 +25,7 @@ const Events = () => {
       
       <div id="events-section"
       className="overflow-hidden justify-center gap-10 md:gap-32 items-center flex flex-col min-h-screen "
-      style={{backgroundImage: "url('../Events.png')", backgroundSize: "cover", backgroundPosition: "center", }}
+      style={{backgroundImage: "url('https://i.ibb.co/SNKsQxk/5.png')", backgroundSize: "cover", backgroundPosition: "center", }}
       >
         <p className="text-8xl font-SquadaOne text-center p-10 ">Techfest Events</p>
         <div className="w-[70%]"><ShiftingCountdown/></div>
@@ -35,7 +35,7 @@ const Events = () => {
       className={`group relative border border-indigo-900 rounded-sm text-xl px-5 py-3 font-medium  transition-colors duration-[400ms] 
       ${
         activeTab === "Hackathon"
-          ? " bg-fuchsia-800  text-white"
+          ? " bg-[#92E5EA] text-black"
           : " text-blue-200"
       }`}
       onClick={() => handleTabClick("Hackathon")}

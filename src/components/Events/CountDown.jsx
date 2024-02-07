@@ -46,8 +46,8 @@ const ShiftingCountdown = () => {
   };
 
   return (
-    <div className=" p-1 md:p-2 bg-gradient-to-br from-orange-600 to-yellow-500">
-      <div className="w-full max-w-5xl mx-auto flex items-center text-white bg-black">
+    <div className=" p-1 md:p-2 rounded-xl max-w-screen-2xl bg-gray-700">
+      <div className="w-full rounded-xl justify-items-stretch flex text-white bg-black">
         <CountdownItem num={remaining.days} text="days" />
         <CountdownItem num={remaining.hours} text="hours" />
         <CountdownItem num={remaining.minutes} text="minutes" />
@@ -59,7 +59,7 @@ const ShiftingCountdown = () => {
 
 const CountdownItem = ({ num, text }) => {
   return (
-    <div className="font-mono w-1/4 h-24 md:h-36 text-white flex flex-col gap-1 md:gap-2 items-center justify-center border-r-[1px] border-slate-200">
+    <div className="font-mono w-1/4 h-24 md:h-36 text-white flex flex-col gap-1 md:gap-2 items-center justify-center rounded-md border-r-[1px] border-slate-200">
       <div className="w-full text-center relative overflow-hidden">
         <AnimatePresence mode="popLayout">
           <motion.span

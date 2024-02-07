@@ -33,7 +33,6 @@ const VerticalTimelineP = () => {
 
   return (
     <div className="w-full  bg-gradient-to-bl from-violet-950 via-black to-blue-900 relative min-h-screen">
-      <div className=" md:absolute hidden md:block left-1/2 top-20 border-y-2 border-white -translate-x-1/2 "><img class=" h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] " src="../ProjTimeline.png" alt="" /></div>
       <div className=" text-center text-6xl h-1/4">
         Timeline
       </div>

@@ -7,7 +7,7 @@ export default function PrizesP() {
         <div
           className="h-screen "
           style={{
-            backgroundImage: "url('../Prize.jpg')",
+            backgroundImage: "url('https://i.ibb.co/rZ3Mj94/13.png%22')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

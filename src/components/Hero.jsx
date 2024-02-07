@@ -92,28 +92,29 @@ const Hero = () => {
 
   const handleButtonClick = () => {
     // Open an external link in a new tab/window
-    window.open('https://forms.gle/FuuSdVu4475dwKjf9', '_blank');
+    window.open('https://innov8.devfolio.co/', '_blank');
   };
 
   return (
     <HeroContainer id='hero-section' >
       <Video
-        url="https://player.vimeo.com/progressive_redirect/playback/855402035/rendition/720p/file.mp4?loc=external&signature=25efff13a9fa9901af9a2a96ebfbca57cd27facd2b3b5e67c2a7b75e506a2f3c"
+        url="https://jumpshare.com/embed/JY9bcL9Su3TIoc01LKRU"
         playing={true}
         loop={true}
         controls={false}
         muted={true}
-        width= "100rem"
-        height= "100rem"
+        width="100rem"
+        height="100rem"
       />
+
       
       <OverlayContent>
       <div className='flex flex-col justify-center items-center'>
         <LogoImage src="https://i.ibb.co/W2pzPgy/avalon-logo.png" alt="avalon-logo" />
         <CustomFont>TechFest</CustomFont>
         <CustomFont2>Where talent meets opportunity in the realm of technology.</CustomFont2>
-        <p></p>
-        <SciFiButton type="button" onClick={handleButtonClick}>Join Avalon</SciFiButton>
+        
+        <button onClick={()=>{handleButtonClick()}} className=' bg-blue-600 text-lg py-2 font-mono justify-center flex border border-white px-16 m-2  '><img src="../Logo/DevFolio B.png" className='w-8 mr-10 ' alt="DEVFOLIO BUTTON" />Apply with Devfolio</button>
       </div>
       </OverlayContent>
     </HeroContainer>

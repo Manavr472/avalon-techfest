@@ -9,6 +9,7 @@ export default {
         'sans': ['Roboto', 'sans-serif'],
         'SquadaOne': ['Squada One', 'cursive'],
         'Anton': ['Anton', 'sans-serif'],
+        'Impact':['Impact', 'Anton']
       },
 
     },

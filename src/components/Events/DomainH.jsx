@@ -6,7 +6,7 @@ export default function DomainH(){
     return(
         <>
         <div className="min-h-screen font-Anton flex flex-col"
-          style={{backgroundImage: "url('../hackathon.png')", backgroundSize: "cover", backgroundPosition: "center", }}
+          style={{backgroundImage: "url('https://i.ibb.co/9wBr1rQ/14.png%22')", backgroundSize: "cover", backgroundPosition: "center", }}
         >
             <div className="h-1/2 text-center p-10">
                 <p className="md:text-7xl">INNOV8 2.0</p>

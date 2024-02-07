@@ -18,7 +18,7 @@ const TimelineEvent = ({ side, title, description }) => {
       }}
 
       className={` p-4 rounded-xl text-center  md:w-[43%] xl:w-[44%] 2xl:w-[45%] shadow-md ${
-          side === "right" ? "ml-auto text-violet-950 bg-gradient-to-bl from-yellow-400 to-orange-500" : " text-yellow-300 bg-gradient-to-br from-indigo-400 to-violet-600"
+          side === "right" ? "ml-auto text-yellow-300 bg-gradient-to-bl from-cyan-400 to-black" : " text-yellow-300 bg-gradient-to-tl from-black to-cyan-400"
       }`}
       >
       <h3 className="font-bold font-Anton text-lg mb-1">{title}</h3>
@@ -33,7 +33,7 @@ const VerticalTimelineH = () => {
 
   return (
     <div className="w-full  bg-gradient-to-bl from-violet-950 via-black to-blue-900 relative min-h-screen">
-      <div className=" md:absolute hidden md:block left-1/2 top-20 border-y-2 border-white -translate-x-1/2 "><img class=" h-[1500px] md:h-[1600px] lg:h-[1750px] xl:h-[1850px] 2xl:h-[2000px] " src="../HackTime.png" alt="" /></div>
+      
       <div className=" text-center text-6xl h-1/4">
         Timeline
       </div>

@@ -5,7 +5,7 @@ function DomainP() {
     return (
       <>
         <div className="min-h-screen flex flex-col"
-              style={{backgroundImage: "url('../Project.png')", backgroundSize: "cover", backgroundPosition: "center", }}
+              style={{backgroundImage: "url('https://i.ibb.co/YNR275Y/15.png%22')", backgroundSize: "cover", backgroundPosition: "center", }}
 
         >
           <div className="h-1/2 font-SquadaOne text-center p-10">
