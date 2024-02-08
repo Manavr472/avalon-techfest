@@ -1,4 +1,5 @@
 import DomainCardP from "./DomainCardP";
+import Waveytext from "../WaveyText";
 
 function DomainP() {
 
@@ -9,7 +10,7 @@ function DomainP() {
 
         >
           <div className="h-1/2 font-Rozha text-center p-2 md:p-10">
-            <p className="my-10 text-5xl md:text-8xl">Project Competition</p>
+              <Waveytext text="PROJECT COMPETITION"/>
           </div>
           <div className="text-5xl font-sans pt-10 text-center ">Project Domains</div>
           <div className="flex h-full items-end">

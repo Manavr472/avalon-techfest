@@ -36,21 +36,21 @@ const Waveytext = ({ text }) => {
   };
 
   return (
-    <motion.div
-        className="md:text-[100px] text-3xl font-Monument text-white"
-      style={{ display: "flex" }}
-      variants={container}
-      initial="hidden"
-      animate="visible"
-      exit={{ opacity: 0 , y: 100}}
-    >
-      {letters.map((letter, index) => (
-        <motion.span variants={child} key={index}>
-          {letter === " " ? "\u00A0" : letter}
-        </motion.span>
-      ))}
-    </motion.div>
-  );
-};
+        <motion.div
+          className="text-[41px] text-center md:text-8xl font-Rozha text-white"
+          style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          exit={{ opacity: 0 , y: 100}}
+        >
+          {letters.map((letter, index) => (
+            <motion.span variants={child} key={index}>
+              {letter === " " ? "\u00A0" : letter}
+            </motion.span>
+          ))}
+        </motion.div>
+      );
+    };
 
 export default Waveytext;

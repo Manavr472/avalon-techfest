@@ -18,7 +18,7 @@ const TimelineEvent = ({ side, title, description }) => {
       }}
 
       className={` p-4 rounded-xl text-center py-10 mx-2 md:w-[43%] xl:w-[44%] 2xl:w-[45%] shadow-md ${
-          side === "right" ? "ml-auto text-white bg-gradient-to-bl from-cyan-400  to-black" : " text-white bg-gradient-to-tl from-black to-cyan-400"
+          side === "right" ? "ml-auto text-white bg-gradient-to-bl from-sky-400  to-black" : " text-white bg-gradient-to-tl from-black to-cyan-400"
       }`}
       >
       <h3 className="font-semibold font-SquadaOne text-xl md:text-3xl mb-1">{title}</h3>

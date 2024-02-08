@@ -63,7 +63,7 @@ export default function About() {
         <OverlayContent>  
         <section class="flex flex-col font-Anton tracking-wider justify-center items-center mx-auto px-8 py-8 lg:py-40">
             <WordZoomer />
-            <p className=" p-7 md:p-14 mt-[10%] md:mt-0 font-Titillium font-bold leading-relaxed md:leading-[3rem] text-center tracking-wide md:text-3xl" >AVALON is the Annual Technical Festival (TechFest) of Terna Engineering College (TEC) that provides a platform for technical aspirants from reputed Institutes and organizations across the nation to showcase their technical knowledge and ideas on a huge platform best suited for them. AVALON Has been organizing such events for the past 14 years now and continues to maintain its legacy. The festival manifests the conglomeration of talent, intellect, innovation and competitive spirit of the students.</p>
+            <p className=" p-7 md:p-16 mt-[10%] md:mt-2 font-Titillium font-semibold leading-relaxed md:leading-[2.6rem] text-center md:text-3xl" >AVALON is the Annual Technical Festival (TechFest) of Terna Engineering College (TEC) that provides a platform for technical aspirants from reputed Institutes and organizations across the nation to showcase their technical knowledge and ideas on a huge platform best suited for them. AVALON Has been organizing such events for the past 14 years now and continues to maintain its legacy. The festival manifests the conglomeration of talent, intellect, innovation and competitive spirit of the students.</p>
         </section>
         </OverlayContent>
         </Container>
