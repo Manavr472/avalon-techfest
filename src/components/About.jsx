@@ -1,5 +1,4 @@
 import React from "react";
-import Waveytext from "./WaveyText";
 import WordZoomer from "./Zoomer";
 import ReactPlayer from 'react-player';
 import styled from 'styled-components';

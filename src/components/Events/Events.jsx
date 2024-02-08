@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import VerticalTimeline from "../Events/Timeline";
+import Waveytext from "../WaveyText";
 import PrizesH from "./PrizesH";
 import PrizesD from "./PrizesD";   
 import PrizesP from "./PrizesP";
@@ -27,7 +28,8 @@ const Events = () => {
       className="overflow-hidden justify-center gap-10 md:gap-32 items-center flex flex-col min-h-screen "
       style={{backgroundImage: "url('https://i.ibb.co/SNKsQxk/5.png')", backgroundSize: "cover", backgroundPosition: "center", }}
       >
-        <p className="md:text-8xl text-5xl font-Rozha text-center p-10 ">TECHFEST EVENTS</p>
+        
+        <Waveytext text="TECHFEST EVENTS"/>
         <div className="w-[70%]"><ShiftingCountdown/></div>
         <div className=" md:flex-row font-Anton flex-col w-full flex justify-center items-center gap-20">
         <button

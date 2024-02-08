@@ -11,10 +11,10 @@ export default function WordZoomer() {
             {isInView && (
                 <motion.div
                     className=" shadow"
-                    animate={{ scale: [1, 1.4] }}
-                    transition={{ duration: 3 }}
+                    animate={{ scale: [1, 1.55] }}
+                    transition={{ duration: 3.2, ease: "easeInOut" }}
                 >
-                   <img src="../icons/about avalon.png" className=" w-60 md:w-96" alt="About Avalon" />
+                   <img src="../icons/about avalon.png" className=" w-60 md:w-[380px]" alt="About Avalon" />
                 </motion.div>
             )}
         </div>

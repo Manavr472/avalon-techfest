@@ -1,8 +1,11 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React,{useRef} from "react";
+import { motion, useInView } from "framer-motion";
 
 const Waveytext = ({ text }) => {
   const letters = Array.from(text);
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
 
   const container = {
     hidden: { opacity: 0 },
@@ -37,12 +40,12 @@ const Waveytext = ({ text }) => {
 
   return (
         <motion.div
+          ref={ref}
           className="text-[41px] text-center md:text-8xl font-Rozha text-white"
           style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
           variants={container}
           initial="hidden"
-          animate="visible"
-          exit={{ opacity: 0 , y: 100}}
+          animate={isInView ? "visible" : "hidden"}
         >
           {letters.map((letter, index) => (
             <motion.span variants={child} key={index}>
