@@ -1,10 +1,17 @@
-import React, { useState } from "react";
-import Hero from "./components/Hero";
-import Register from "./components/Register";
-import Carousel from "./components/Carousel";
-import Footer from "./components/Footer";
-import "./App.css";
-import About from "./components/About";
+
+import React from 'react';
+import Hero from './components/Hero';
+import Sponsor from './components/Sponsor';
+import Footer from './components/Footer';
+import MarqueeComponent from './components/Carousel2';
+import About from './components/About';
+import Events from './components/Events/Events';
+import './App.css';
+import Navbar from './components/Navbar';
+
+
+
+
 const App = () => {
   // const [showLogoZoom, setShowLogoZoom] = useState(true);
   // const [showHero, setShowHero] = useState(false);
@@ -15,13 +22,21 @@ const App = () => {
   // };
 
   return (
-    <div className="app">
-      <Hero />
-      <Register />
-      <Carousel />
-      <About />
-      <Footer />
-    </div>
+
+   <>
+   <Navbar/>
+    <Hero/> 
+   <About/>
+    <Events/>
+
+   <Sponsor/>
+   {/* <Timeline /> */}
+    <MarqueeComponent></MarqueeComponent>
+
+    {/* <FaqSection/> */}
+    <Footer/>
+   </>
+
   );
 };
 

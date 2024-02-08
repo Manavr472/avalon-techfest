@@ -39,6 +39,8 @@ const OverlayContent = styled.div`
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+  justify-content:center;
+  align-items:center ; 
 `;
 
 const Video = styled(ReactPlayer)`
@@ -88,28 +90,45 @@ const SciFiButton = styled.button`
 
 const Hero = () => {
 
-  const handleButtonClick = () => {
-    // Open an external link in a new tab/window
-    window.open('https://forms.gle/FuuSdVu4475dwKjf9', '_blank');
-  };
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+}, []);   
 
   return (
-    <HeroContainer>
+    <HeroContainer id='hero-section' >
       <Video
-        url="https://player.vimeo.com/progressive_redirect/playback/855402035/rendition/720p/file.mp4?loc=external&signature=25efff13a9fa9901af9a2a96ebfbca57cd27facd2b3b5e67c2a7b75e506a2f3c"
+        url="https://d1xviafewcoylr.cloudfront.net/m27oxi%2Ffile%2Fff0094e99a0294dc14083b24f2fe73bf_f3f8d8d51cc8de33e864ea265a7cc94e.mp4?response-content-disposition=inline%3Bfilename%3D%22ff0094e99a0294dc14083b24f2fe73bf_f3f8d8d51cc8de33e864ea265a7cc94e.mp4%22%3B&response-content-type=video%2Fmp4&Expires=1707395121&Signature=EJ~zJzMbwOwkqxx8EC34YwzU7DTbf-HW8xJu18f-lwdmJbpmH0~FazHJdv6Hws3v8~0s30DZQdBl8VLscL0xhOC-~Ito1owi5jANQKPrVfqDbB407vzTXIDDxqDIa6EnQAQwKMRSr6Vg0QDCcFzaaILz60zKfFGlfo~RjDMEf6RydoJpcBFVfet0JZuED6SE18Ong5ChUL2WsmmsP~EW9d~UdNOYFrQHluAzrPAJ3zQ2ning1LyT~9~B3fpPp4sOKB4SXdGptL2lML1QEfr6z4616V4oCJzq9vQ1GzuBcv7oj8Mvbk6RQNHSH3K7NQCp7XuS~KvtXBTaPm83nHotPA__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ"
         playing={true}
         loop={true}
         controls={false}
         muted={true}
-        width= "130rem"
-        height= "130rem"
+        width="105rem"
+        height="100rem"
       />
+
+      
       <OverlayContent>
+      <div className='flex flex-col justify-center items-center'>
         <LogoImage src="https://i.ibb.co/W2pzPgy/avalon-logo.png" alt="avalon-logo" />
         <CustomFont>TechFest</CustomFont>
         <CustomFont2>Where talent meets opportunity in the realm of technology.</CustomFont2>
-        <p></p>
-        <SciFiButton type="button" onClick={handleButtonClick}>Join Avalon</SciFiButton>
+                        <div 
+                  class="apply-button" 
+                  data-hackathon-slug="innov8" 
+                  data-button-theme="light"
+                  className='h-20 hover:scale-[1.01] active:scale-95 w-96'
+                ></div>
+
+
+      
+            </div>
       </OverlayContent>
     </HeroContainer>
   );
