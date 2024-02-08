@@ -5,17 +5,17 @@ const DomainCardP = () => {
     return (
       <div className="grid grid-cols-1 gap-y-10 place-items-center md:grid-cols-3 w-full px-4 py-10 text-slate-900">
         <TiltCard
-          bgColor="#67b0fa"
+          
           title="Software Projects"
           content="Participants in this domain will present innovative software solutions designed to address real-world challenges and drive digital transformation. "
         />
         <TiltCard
-          bgColor="#fab267"
+          
           title="Electrical and Electronics & Telecommunication Projects"
           content="This domain focuses on projects leveraging cutting-edge technology in electrical engineering, electronics, and telecommunication to revolutionise communication systems and electronic devices. "
         />
         <TiltCard
-          bgColor="#67fab2"
+         
           title="Civil, Mechanical, Mechatronics, and Aerospace Projects"
           content="In this domain, participants will showcase projects that push the boundaries of civil, mechanical, mechatronics, and aerospace engineering. "
         />
@@ -27,7 +27,7 @@ const DomainCardP = () => {
   const ROTATION_RANGE = 32.5;
   const HALF_ROTATION_RANGE = 32.5 / 2;
   
-  const TiltCard = ({ bgColor, title, content }) => {
+  const TiltCard = ({ title, content }) => {
     const ref = useRef(null);
   
     const [rotateX, setRotateX] = useState(0);
@@ -63,14 +63,14 @@ const DomainCardP = () => {
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{
-          backgroundColor: bgColor,
+          
           transformStyle: "preserve-3d",
         }}
         animate={{
           rotateX,
           rotateY,
         }}
-        className={`relative h-96 w-72 rounded-xl shadow-lg`}
+        className={`relative h-96 w-72 rounded-xl bg-opacity-90 bg-gradient-to-b from-[#a52b99] via- to-orange-600 shadow-lg`}
       >
         <div
           style={{

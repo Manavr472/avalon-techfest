@@ -90,20 +90,26 @@ const SciFiButton = styled.button`
 
 const Hero = () => {
 
-  const handleButtonClick = () => {
-    // Open an external link in a new tab/window
-    window.open('https://innov8.devfolio.co/', '_blank');
-  };
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+}, []);   
 
   return (
     <HeroContainer id='hero-section' >
       <Video
-        url="https://pouch.jumpshare.com/preview/iO1lfuF4Q4KEal8EFUdOT85gX9znY3_dNNjIwvgO_B90l6qmxlmGYBkulsnAJSesmvMjN9YeMLCw-qaWvh4EVGvPjJMVhPZGddtemj7mDpKPO60sV0gAnb6Q-F_z3xZ-q5-03AlkhDZeeI0lMWhWOaN_fIMI2zJarj0avEcXWfs.mp4"
+        url="https://d1xviafewcoylr.cloudfront.net/m27oxi%2Ffile%2Fff0094e99a0294dc14083b24f2fe73bf_f3f8d8d51cc8de33e864ea265a7cc94e.mp4?response-content-disposition=inline%3Bfilename%3D%22ff0094e99a0294dc14083b24f2fe73bf_f3f8d8d51cc8de33e864ea265a7cc94e.mp4%22%3B&response-content-type=video%2Fmp4&Expires=1707395121&Signature=EJ~zJzMbwOwkqxx8EC34YwzU7DTbf-HW8xJu18f-lwdmJbpmH0~FazHJdv6Hws3v8~0s30DZQdBl8VLscL0xhOC-~Ito1owi5jANQKPrVfqDbB407vzTXIDDxqDIa6EnQAQwKMRSr6Vg0QDCcFzaaILz60zKfFGlfo~RjDMEf6RydoJpcBFVfet0JZuED6SE18Ong5ChUL2WsmmsP~EW9d~UdNOYFrQHluAzrPAJ3zQ2ning1LyT~9~B3fpPp4sOKB4SXdGptL2lML1QEfr6z4616V4oCJzq9vQ1GzuBcv7oj8Mvbk6RQNHSH3K7NQCp7XuS~KvtXBTaPm83nHotPA__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ"
         playing={true}
         loop={true}
         controls={false}
-        // muted={true} kya hua bhai???
-        width="100rem"
+        muted={true}
+        width="105rem"
         height="100rem"
       />
 
@@ -113,9 +119,16 @@ const Hero = () => {
         <LogoImage src="https://i.ibb.co/W2pzPgy/avalon-logo.png" alt="avalon-logo" />
         <CustomFont>TechFest</CustomFont>
         <CustomFont2>Where talent meets opportunity in the realm of technology.</CustomFont2>
-        
-        <button onClick={()=>{handleButtonClick()}} className=' bg-blue-600 text-base md:text-lg py-2 font-mono ite justify-center flex border border-white px-10 m-2  '><img src="../Logo/DevFolio B.png" className='w-8 mr-5 ' alt="DEVFOLIO BUTTON" />Apply with Devfolio</button>
-      </div>
+                        <div 
+                  class="apply-button" 
+                  data-hackathon-slug="innov8" 
+                  data-button-theme="light"
+                  className='h-20 hover:scale-[1.01] active:scale-95 w-96'
+                ></div>
+
+
+      
+            </div>
       </OverlayContent>
     </HeroContainer>
   );

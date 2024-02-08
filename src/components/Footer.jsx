@@ -4,10 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faLinkedin, faYoutube, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const FooterWrapper = styled.div`
-  background-color: #000;
-  background-size: cover;
-  background-position: center; /* Stretch image twice the height */
-  background-repeat: no-repeat;
+  
   height: auto;
   text-align: center;
   display: flex;
@@ -43,11 +40,13 @@ const SocialIconLink = styled.a`
 
 const Footer = () => {
   return (
-    <FooterWrapper className='relative'>
+    <FooterWrapper className='relative bg-[#071a20] border-t border-t-white '>
       <Logo src="https://i.ibb.co/W2pzPgy/avalon-logo.png" alt="Avalon Logo" />
       <div className='flex flex-col md:flex-row gap-5 w-full'>
-        <div className='  md:w-1/2'>
-          <iframe className='self-start md:ml-20 ' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52017.44601061713!2d72.97512375718512!3d19.047247545815857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3eaaa53c4e3%3A0x9459161291e7ded5!2sTerna%20Engineering%20College!5e0!3m2!1sen!2sin!4v1707135874941!5m2!1sen!2sin" width="300" height="260" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div className=' flex flex-col justify-center items-center md:w-1/2'>
+          <p className='text-3xl'>Location</p>
+          <p className='text-lg'>Terna Engineering College, Nerul</p>
+          <iframe className='self-start mx-auto ' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52017.44601061713!2d72.97512375718512!3d19.047247545815857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3eaaa53c4e3%3A0x9459161291e7ded5!2sTerna%20Engineering%20College!5e0!3m2!1sen!2sin!4v1707135874941!5m2!1sen!2sin" width="320" height="270" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div className='md:w-1/3 flex flex-col justify-center'>
           <SocialIcons>

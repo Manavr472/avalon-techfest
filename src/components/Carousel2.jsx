@@ -15,7 +15,7 @@ export default function MarqueeComponent() {
         >
         <div className="flex text-center justify-center items-center py-8 my-2 text-2xl md:text-7xl text-white">Glimpse at Avalon 2023</div>
         <Marquee  className=" overflow-hidden" style={{ height: '600px',
-    }} pauseOnHover="True" speed="250" delay="0.1" >
+    }} pauseOnHover="True" speed="250"  >
 
     <div className={containerStyle}>
       <img className={imgStyle} src="https://i.ibb.co/Xj29dhx/image-6.jpg" alt="image-6" border="0"/>

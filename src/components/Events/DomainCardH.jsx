@@ -61,7 +61,7 @@ const TiltCard = ({ title, content }) => {
         rotateX,
         rotateY,
       }}
-      className={`relative h-96 w-72 bg-gradient-to-b from-[#d81000] to-[#18337c] rounded-xl shadow-lg`}
+      className={`relative md:h-96 h-80 md:w-72 w-64 bg-gradient-to-b from-[#d81000] to-[#18337c] rounded-xl shadow-lg`}
     >
       <div
         style={{

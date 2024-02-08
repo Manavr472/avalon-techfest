@@ -37,6 +37,7 @@ const Video = styled(ReactPlayer)`
   height: auto;
   object-fit: cover;
   pointer-events: none;
+  
   z-index: -1;
 
   /* Media query for phone screens (adjust breakpoint as needed) */
@@ -51,18 +52,18 @@ export default function About() {
     return (
        <Container>
         <Video
-        url="https://pouch.jumpshare.com/preview/SYxqr9ygvLn4-JXkW-BPvfXf2KgGB55e9MEtf_-6B9_F9LAF7ST_2_axHCanR_rWblTIG-HCA_GbXq3y_CUvv9tF8zJDk61fhdeOg4Xqrm0ShGZBsiv77LQPLbAV7eHgKP892PDMU7sbYh5QL5otgKN_fIMI2zJarj0avEcXWfs.mp4"
+        url="https://d96cx6ozu9qlk.cloudfront.net/n14pxi%2Ffile%2F0298163b8bae7bf41c8929617975e8d6_23234a0aea36fd503f1f9d7c89340cb9.mp4?response-content-disposition=inline%3Bfilename%3D%220298163b8bae7bf41c8929617975e8d6_23234a0aea36fd503f1f9d7c89340cb9.mp4%22%3B&response-content-type=video%2Fmp4&Expires=1707395359&Signature=Tqpj9jXLkG7OnaASKWALVamHjgC2kn98-o0~J-H9rbipntjxsrvJwGk~cC44G~40piQQ4eZ9SnxeF~yBq9Q0HIFBLlYuDBraF3qBpeq3uWt049YnIgtBROgf6-8jyFV1HTmkEZUefMVUBk1MctzhLA4otCCh7KsLeqQdISCweAg3bET3LmXXPV367xPHpOUOQRFso49op7CAuHlarIMxlxblft1mB8nxBVX-R-Dt17yTsrk69~z85GFMVSGvFCRVo6zLTILCmHqAaJIAHOoXSfeP7s7OtFeGjQ~30ASBBB3N7LGUTplcA4sEmAMGIopGYJZ4PIqk0i3q7Q67Czlhsg__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ"
         playing={true}
         loop={true}
         controls={false}
         muted={true}
-        width= "100rem"
+        width= "105rem"
         height= "100rem"
         />
         <OverlayContent>  
         <section class="flex flex-col font-Anton tracking-wider justify-center items-center mx-auto px-8 py-8 lg:py-40">
-            <WordZoomer text="ABOUT AVALON"/>
-            <p className=" p-10 md:p-20 md:mt-[5%] font-Impact leading-relaxed md:leading-[3rem] text-center font-thin tracking-wide md:text-3xl" >AVALON is the Annual Technical Festival (TechFest) of Terna Engineering College (TEC) that provides a platform for technical aspirants from reputed Institutes and organizations across the nation to showcase their technical knowledge and ideas on a huge platform best suited for them. AVALON Has been organizing such events for the past 14 years now and continues to maintain its legacy. The festival manifests the conglomeration of talent, intellect, innovation and competitive spirit of the students.</p>
+            <WordZoomer />
+            <p className=" p-7 md:p-14 mt-[10%] md:mt-0 font-Titillium font-bold leading-relaxed md:leading-[3rem] text-center tracking-wide md:text-3xl" >AVALON is the Annual Technical Festival (TechFest) of Terna Engineering College (TEC) that provides a platform for technical aspirants from reputed Institutes and organizations across the nation to showcase their technical knowledge and ideas on a huge platform best suited for them. AVALON Has been organizing such events for the past 14 years now and continues to maintain its legacy. The festival manifests the conglomeration of talent, intellect, innovation and competitive spirit of the students.</p>
         </section>
         </OverlayContent>
         </Container>

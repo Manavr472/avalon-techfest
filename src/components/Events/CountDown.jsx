@@ -46,8 +46,8 @@ const ShiftingCountdown = () => {
   };
 
   return (
-    <div className=" p-1 md:p-2 rounded-xl max-w-screen-2xl bg-gray-700">
-      <div className="w-full rounded-xl justify-items-stretch flex text-white bg-black">
+    <div className=" p-1 md:p-2 rounded-xl max-w-screen-2xl bg-gradient-to-br from-cyan-300 via-white to-blue-400 ">
+      <div className="w-full rounded-xl justify-items-stretch shadow-inner flex text-white bg-black">
         <CountdownItem num={remaining.days} text="days" />
         <CountdownItem num={remaining.hours} text="hours" />
         <CountdownItem num={remaining.minutes} text="minutes" />

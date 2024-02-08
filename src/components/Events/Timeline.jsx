@@ -36,6 +36,7 @@ const VerticalTimelineH = () => {
       
       <div className=" text-center font-Impact my-10 text-5xl md:text-7xl h-1/4">
         Timeline
+        <p className="text-2xl font-mono md:text-4xl">Day-1</p>
       </div>
       <div className="flex flex-col gap-4 my-10 overflow-hidden h-full w-full md:w-[90%] md:grid grid-cols-1 mx-auto ">
         {/* Add Timeline Events */}
@@ -90,11 +91,11 @@ const VerticalTimelineH = () => {
           title="Dinner"
           description="Take a break at 21:00"
         />
-       <p className="text-center md:hidden text-xl md:text-5xl">Day-2 Starts!!</p>
+       <p className="text-center text-2xl md:text-4xl">Day-2 Starts!</p>
         <TimelineEvent
           side="right"
           title="Connect"
-          description=" 00:00 starts with Interaction Session"
+          description=" 00:00 starts with an Interactive Session"
         />
         <TimelineEvent
           side="left"
@@ -114,7 +115,7 @@ const VerticalTimelineH = () => {
         <TimelineEvent
           side="right"
           title="Judging and pitching"
-          description="12:30"
+          description="Be ready with your Submissions by 12:30"
         />
         <TimelineEvent
           side="left"

@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import React,{useRef} from "react";
 
-export default function WordZoomer({ text }) {
+export default function WordZoomer() {
     const ref = useRef(null);
     const isInView = useInView(ref);
 
@@ -10,11 +10,11 @@ export default function WordZoomer({ text }) {
         <div ref={ref}>
             {isInView && (
                 <motion.div
-                    className=" text-4xl md:text-7xl shadow text-[#ff5400] "
-                    animate={{ scale: [1, 1.3] }}
+                    className=" shadow"
+                    animate={{ scale: [1, 1.4] }}
                     transition={{ duration: 3 }}
                 >
-                    {text}
+                   <img src="../icons/about avalon.png" className=" w-60 md:w-96" alt="About Avalon" />
                 </motion.div>
             )}
         </div>

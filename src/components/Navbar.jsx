@@ -58,7 +58,7 @@ return (
             <motion.button
              whileHover={{ scale: 1.1 }}
              whileTap={{ scale: 0.9 }}
-  className="text-white cursor-pointer text-xl transition-all delay-75 duration-150 leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+  className="text-white cursor-pointer text-xl transition-all delay-75 duration-150 leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none"
   type="button"
   onClick={() => setNavbarOpen(!navbarOpen)}
 >

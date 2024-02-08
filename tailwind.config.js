@@ -10,7 +10,9 @@ export default {
         'SquadaOne': ['Squada One', 'cursive'],
         'Anton': ['Anton', 'sans-serif'],
         'Impact':['Impact', 'Anton'],
-        'Comfortaa':['Comfortaa']
+        'Comfortaa':['Comfortaa'],
+        'Titillium':['Titillium Web'],
+        'Rozha':['Rozha One'],
       },
 
     },

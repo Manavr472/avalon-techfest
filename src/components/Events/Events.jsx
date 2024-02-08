@@ -27,7 +27,7 @@ const Events = () => {
       className="overflow-hidden justify-center gap-10 md:gap-32 items-center flex flex-col min-h-screen "
       style={{backgroundImage: "url('https://i.ibb.co/SNKsQxk/5.png')", backgroundSize: "cover", backgroundPosition: "center", }}
       >
-        <p className="text-8xl font-SquadaOne text-center p-10 ">Techfest Events</p>
+        <p className="text-8xl font-Rozha text-center p-10 ">TECHFEST EVENTS</p>
         <div className="w-[70%]"><ShiftingCountdown/></div>
         <div className=" md:flex-row font-Anton flex-col w-full flex justify-center items-center gap-20">
         <button
@@ -35,7 +35,7 @@ const Events = () => {
       className={`group relative border border-indigo-900 rounded-sm text-xl px-5 py-3 font-medium  transition-colors duration-[400ms] 
       ${
         activeTab === "Hackathon"
-          ? " bg-blue-500 text-white"
+          ? " bg-blue-300 bg-opacity-30 text-white"
           : " text-blue-200"
       }`}
       onClick={() => handleTabClick("Hackathon")}
@@ -59,7 +59,7 @@ const Events = () => {
       className={`group relative border border-indigo-800 rounded-sm text-xl px-5 py-3 font-medium  transition-colors duration-[400ms] 
       ${
         activeTab === "Project"
-          ? "bg-violet-800  text-white"
+          ? "bg-purple-400 bg-opacity-30 text-white"
           : " text-blue-200"
       }`}
       onClick={() => handleTabClick("Project")}
@@ -83,7 +83,7 @@ const Events = () => {
       className={`group relative border border-indigo-800 rounded-sm text-xl px-5 py-3 font-medium  transition-colors duration-[400ms] 
       ${
         activeTab === "Design"
-          ? " bg-rose-800  text-white"
+          ? " bg-teal-400 bg-opacity-30 text-white"
           : " text-blue-200"
       }`}
       onClick={() => handleTabClick("Design")}
