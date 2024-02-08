@@ -1,4 +1,5 @@
 import React from "react";
+
 import WordZoomer from "./Zoomer";
 import ReactPlayer from 'react-player';
 import styled from 'styled-components';
@@ -10,16 +11,20 @@ const Container = styled.div`
   overflow: hidden;
 
   /* Responsive layout */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+
   @media (max-width: 768px) {
     /* Adjust text sizes for smaller screens */
+
     font-size: 16px;
   }
 `;
+
 
 const OverlayContent = styled.div`
   position: absolute;

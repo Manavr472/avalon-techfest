@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Hero from './components/Hero';
 import Sponsor from './components/Sponsor';
@@ -7,6 +8,7 @@ import About from './components/About';
 import Events from './components/Events/Events';
 import './App.css';
 import Navbar from './components/Navbar';
+
 
 
 
@@ -20,6 +22,7 @@ const App = () => {
   // };
 
   return (
+
    <>
    <Navbar/>
     <Hero/> 
@@ -33,6 +36,7 @@ const App = () => {
     {/* <FaqSection/> */}
     <Footer/>
    </>
+
   );
 };
 
